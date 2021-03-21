@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Menu</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+    .fa{
+  padding:20px; 
+  font-size: 30px; 
+  width: 50px; 
+  align: center; 
+  text-decoration:none; 
+
+} 
+    .myWork{
+      margin:10px 50px; 
+    
+    }
+    .myWork img{
+      transition: 1s; 
+      padding: 15px; 
+      width: 200px; 
+    }
+    .myWork img:hover{
+      filter: grayscale(100%); 
+      transform: scale(1.1); 
+
+    }
+    .wrapper{
+      width: 1200px; 
+      margin: 100px auto; 
+    }
+    .title{
+      text-align: center; 
+      margin-bottom:60px; 
+    }
+    .title h4{
+      text-transform: capitalize; 
+      font-size: 36px; 
+      position: relative; 
+      display: inline-block; 
+      padding-bottom: 50px; 
+
+    }
+    .title h4 span{
+      display: block; 
+      font-size: 18px; 
+      font-style: italic; 
+      margin-bottom: -103px; 
+    }
+    .title h4:before{
+      position: absolute; 
+      content: ""; 
+      width: 100px; 
+      height: 2px; 
+      background-color: black; 
+      bottom: 0; 
+      left:50%; 
+      transform: translateX(-50%);
+    }
+    .menu{
+      display:flex; 
+      flex-wrap: wrap; 
+      justify-content:space-between; 
+    }
+    .single-menu{
+      flex-basis:580px; 
+      margin-bottom:40px; 
+      padding-bottom: 40px; 
+      border-bottom: 1px solid #ddd; 
+      display: flex; 
+      flex-direction: row; 
+      align-items: center; 
+
+    }
+    .single-menu:nth-child(5), .single-menu:nth-child(6){
+      border-bottom: 0; 
+    }
+    .single-menu img{
+      max-width:180px; 
+      margin-right:30px; 
+      padding:3px; 
+
+    }
+    .single-menu h4{
+      text-transform: capitalize; 
+      font-size: 22px; 
+      nborder-bottom: 1px dashed #333; 
+      margin-bottom: 5px; 
+      padding-bottom: 5px; 
+
+    }
+    .single-menu h4 span{
+      float:right; 
+      color: lightGray; 
+      font-style: italic; 
+
+    }
+    p{
+      color:gray; 
+    }
+	</style>
+	<body> 
+    <div id ="mySidenav" class= "sidenav"> 
+      <a href ="index.html" id="home"> Home </a>
+      <a href ="menu.html" id="courses">Menu</a>
+      <a href ="funZone.html"id="De-stress">Fun Zone</a>
+    </div> 
+    <div class ="wrapper"> 
+      <div class ="title"> 
+        <h4><span>Healthy Food to Feed your Soul. </span> Our Menu</h4>
+      </div> 
+      <div class="menu"> 
+        <div class="single-menu"> 
+          <img src ="images/food1.jpg"> 
+          <div class ="menu-content"> 
+            <h4> Avaco Bread </h4><span>$4.45 </span> 
+            <p> If you love nature and you love dogs, then hiking with your dog might be perfect for you.</p> 
+          </div> 
+          </div> 
+        <div class="single-menu"> 
+          <img src ="images/food2.jpg"> 
+          <div class ="menu-content"> 
+            <h4> Bread Roll </h4><span>$3.45 </span> 
+            <p> If you love nature and you love dogs, then hiking with your dog might be perfect for you.</p> 
+          </div> 
+          </div> 
+          <div class="single-menu"> 
+          <img src ="images/food3.jpg"> 
+          <div class ="menu-content"> 
+            <h4> Chipy Chip </h4><span>$3.45 </span> 
+            <p> If you love nature and you love dogs, then hiking with your dog might be perfect for you.</p> 
+          </div> 
+          </div> 
+          <div class="single-menu"> 
+          <img src ="images/food4.jpg"> 
+          <div class ="menu-content"> 
+            <h4> Samosa </h4><span>$6.00 </span> 
+            <p> If you love nature and you love dogs, then hiking with your dog might be perfect for you.</p> 
+          </div> 
+          </div> 
+          <div class="single-menu"> 
+          <img src ="images/food5.jpg"> 
+          <div class ="menu-content"> 
+            <h4> Potato Rolls </h4><span>$2.45 </span> 
+            <p> If you love nature and you love dogs, then hiking with your dog might be perfect for you.</p> 
+          </div> 
+          </div> 
+          <div class="single-menu"> 
+          <img src ="images/food6.jpg"> 
+          <div class ="menu-content"> 
+            <h4> Healthy CupCakes  </h4><span>$2.45/lb</span> 
+            <p> If you love nature and you love dogs, then hiking with your dog might be perfect for you.</p> 
+          </div> 
+          </div> 
+</div> 
+
+
+
+<br> <br> 
+<hr> 
+<br> <br> 
+<div class ="reachHere"> 
+<h1 style="align:center;"> Contact </h1> 
+<p> Lets get in touch. Send us a message: </p>
+<p> <i class ="fa fa-map-marker"></i> Massachusetts, US </p> 
+<p><i class="fa fa-phone"></i> Phone: +00 151515</p>
+<p><i class="fa fa-envelope"> </i> Email: example@example.com</p>
+<br> 
+<form action ="action_page.php" target = "_blank">
+  <div class ="email"> 
+  <p><input type="text" placeholder="Name" required name="Name"></p>
+      <p><input type="text" placeholder="Phone Number" required name="Email"></p>
+      <p><input  type="text" placeholder="Your Order" required name="Subject"></p>
+      <p><input type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class ="sendMessage-button" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+      </div> 
+    </form>
+    </div> 
+    </div>
+<hr>
+<br> 
+    <h1 style="text-align:center;"> My ART </h1> 
+    <p style="text-align:center;"><em> Support me! </em> </p> 
+  <div class ="myWork"> 
+    <a href = "images/food1.jpg"><img src="images/food1.jpg"></a> 
+    <a href = "images/food2.jpg"><img src="images/food2.jpg"></a> 
+    <a href = "images/food3.jpg"><img src="images/food3.jpg"></a> 
+    <a href = "images/food4.jpg"><img src="images/food4.jpg"></a> 
+    <a href = "images/food5.jpg"><img src="images/food5.jpg"></a> 
+    <a href = "images/food6.jpg"><img src="images/food6.jpg"></a> 
+    <a href = "images/food7.jpg"><img src="images/food7.jpg"></a> 
+    <a href = "images/food8.jpg"><img src="images/food8.jpg"></a> 
+    <a href = "images/food9.jpg"><img src="images/food9.jpg"></a> 
+    <a href = "images/food10.jpg"><img src="images/food10.jpg"></a> 
+  </div>  
+  <div class ="socialMedia">
+  <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+<a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+<a href="https://www.pinterst.com/" class ="fa fa-pinterest"></a>
+</div>
+  </body> 
+</html>
